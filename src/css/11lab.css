@@ -1,0 +1,83 @@
+.wrapper {
+    max-width: 1296px;
+    height: 1000px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.form_wrapper_modal {
+    max-width: 850px;
+    font-size: 0.2rem;
+    display: block;
+    margin: auto;
+    color: white;
+  }
+  
+  button {
+    background-color: #fc0a7e;
+    color: #1b1b1b;
+    min-width: 156px;
+    padding: 20px;
+    border: none;
+  }
+
+.bag {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+#button_bag {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+  .filter .form_modal {
+    display: none;
+  }
+  
+  .filter {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    z-index: 5;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #closebutton {
+    min-width: 100px;
+    padding: 5px;
+    background-color: #fc0a7e;
+    color: white;
+    margin-left: 900px;
+  }
+  
+  #closebutton:hover {
+    opacity: 70%;
+  }
+  
+  .card {
+    width: 400px;
+    height: 200px;
+    background-color: #1b1b1b;
+    margin: 0 auto;
+  }
+  
+  .error {
+    display: none;
+  }
+  
+  .card {
+    transition:transform 0.15s
+  }
+  

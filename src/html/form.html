@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard main page</title>
+  <link rel="stylesheet" href="../css/normalise.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/form.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="header_navigation">
+      <a href="index.html"><img class="header_image" src="../img/Richard logotip.svg" alt="Richard Logo" /></a>
+      <ul class="list">
+        <li class="list_item"><a href="#about">About</a></li>
+        <li class="list_item"><a href="#features">Features</a></li>
+        <li class="list_item"><a href="#how to use">How to use</a></li>
+        <li class="list_item"><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+    <div class="header_main">
+      <div>
+        <h1 class="main_heading">Momentum</h1>
+        <h2 class="heading">Launch your product — and savor the momentum.</h2>
+        <button class="button_get_the_app">Get the App</button>
+      </div>
+      <img class="header_img" src="../img/Purple header phone.png" alt="Purple phone" />
+    </div>
+    <img class="arrow" src="../img/arrow.svg" alt="White arrow" />
+  </header>
+  <main>
+    <div class="form_wrapper">
+      <form action="//httpbin.org/post" method="post">
+        <div class="first_form">
+          <fieldset class="personal_information">
+            <legend>Personal information</legend>
+            <div class="first_form_label">
+
+              <input class="form_enters" type="text" placeholder="Alex" name="name" id="name" required />
+              <label for="name">Enter your name</label>
+            </div>
+            <div class="first_form_label">
+              <input class="form_enters form_required" type="date" placeholder="12.03.2003" name="birth" id="birth"
+                required />
+              <label for="birth">Enter your date of birth</label>
+            </div>
+            <label class="first_form_label gender" for="gender">
+              <select class="form_enters" name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <span>Specify your gender</span>
+            </label>
+            <div class="first_form_label">
+              <input class="form_enters form_required" type="password" name="password" id="password"
+                placeholder="Enter the password" required />
+              <label for="password">Enter the password</label>
+            </div>
+          </fieldset>
+          <fieldset class="contact_details">
+            <legend>Contact details</legend>
+            <div class="contact_details_box">
+              <div class="first_form_label">
+                <input class="form_enters" type="email" id="form_email" placeholder="bfndjfn@mail.ru" />
+                <label for="form_email">Enter your email</label>
+              </div>
+              <div class="first_form_label">
+                <input class="form_enters form_required" type="tel" placeholder="89999999999" name="tel" id="tel"
+                  required />
+                <label for="tel">Enter your phone number</label>
+              </div>
+              <div class="form_radio">
+                <label class="first_form_label">Convenient time for communication</label>
+                <div>
+                  <input type="radio" name="time" value="Morning" id="morning" checked />
+                  <label for="morning" class="form_radio_focus">Morning</label>
+                  <input type="radio" name="time" value="Afternoon" id="afternoon" />
+                  <label for="afternoon" class="form_radio_focus">Afternoon</label>
+                  <input type="radio" name="time" value="Evening" id="evening" />
+                  <label for="evening" class="form_radio_focus">Evening</label>
+                  <input type="radio" name="time" value="Night" id="night" />
+                  <label for="night" class="form_radio_focus">Night</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form_buttons">
+          <button class="submit" type="submit">Submit</button>
+          <button class="reset" type="reset" disabled>Reset</button>
+        </div>
+      </form>
+    </div>
+    <form method="" action="">
+      <dl>
+        <dt>Pseudo-class</dt>
+        <dd>
+          A special kind of selector that specifies the type or state. Usually this is some kind
+          of qualitative sign: the reaction to the cursor pointing, the order of succession, and
+          others.
+        </dd>
+        <div class="pseudoclass_list">
+          <div>
+            <input type="checkbox" name="checkbox" value="first-letter" id="root" checked />
+            <label for="root">:root</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="link" value="first-line" />
+            <label for="link">:link</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="visited" />
+            <label>:visited</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="hover" checked />
+            <label>:hover</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="active" checked />
+            <label>:active</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="focus" checked />
+            <label>:focus</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="first-child" />
+            <label>:first-child</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="last-child" checked />
+            <label>:last-child</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="nth-child(x)" />
+            <label>:nth-child(x)</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="nth-last-child" />
+            <label>:nth-last-child(x)</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="only-child" />
+            <label>:only-child</label>
+          </div>
+        </div>
+      </dl>
+      <dl>
+        <dt>Pseudo-element</dt>
+        <dd>
+          Elements that do not exist in the HTML markup, but act as if you added a whole new HTML
+          element to the markup. They are created and positioned exclusively using CSS. They are
+          most often used to create various decorative elements (which do not carry meaningful
+          meaning).
+        </dd>
+        <div class="pseudoelement_list">
+          <div>
+            <input type="checkbox" name="checkbox" value="first-letter" checked />
+            <label>::first-letter</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="first-line" />
+            <label>::first-line</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="selection" checked />
+            <label>::selection</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="marker" />
+            <label>::marker</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="before" checked />
+            <label>::before</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="after" checked />
+            <label>::after</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" value="placeholder" checked />
+            <label>::placeholder</label>
+          </div>
+        </div>
+      </dl>
+    </form>
+  </main>
+  <footer>
+    <h2 class="call">Get updates from Richard</h2>
+    <p class="call_explanation">New course alerts, discounts and free lessons</p>
+    <form action="/" class="button_email">
+      <label for="email" class="visuallyhidden">Enter your email</label>
+      <input class="enter_email" id="email" type="email" name="enter_email" placeholder="Enter your email" style="color: #1C1C1C;
+          padding: 20px;" />
+      <label for="subscribe" class="visuallyhidden">Subscribe </label><input class="subscribe" id="subscribe"
+        type="button" name="subscribe_btn" value="Subscribe" />
+    </form>
+    <img class="footer_img" src="../img/footer richard logo.svg" alt="Footer Richard logo" />
+    <ul class="footer_list">
+      <li><a href="#/">Email</a></li>
+      <li><a href="#/">Instagram</a></li>
+      <li><a href="#/">Facebook</a></li>
+      <li><a href="#/">Twitter</a></li>
+      <li><a href="#/">Image License Info</a></li>
+      <li><a href="#/">Powered by Webflow</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

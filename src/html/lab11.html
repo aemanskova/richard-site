@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/11lab.css" />
+</head>
+
+<body>
+    <section class="wrapper">
+        <h1>Манскова Алёна - Лабораторная работа №11</h1>
+        <div class="bag">
+            <p>Number of products:<span id="number_of_products">0</span></p>
+
+            <button id="button_bag">Add to the bag</button>
+        </div>
+
+        <button id="modalbutton">Modal window</button>
+        <div class="filter">
+            <div class="form_wrapper_modal form_modal">
+                <form action="//httpbin.org/post" method="post">
+                    <button id="closebutton">Close</button>
+                    <div class="first_form">
+                        <fieldset class="personal_information">
+                            <legend>Personal information</legend>
+                            <div class="first_form_label">
+
+                                <input class="form_enters" type="text" placeholder="Alex" name="name" id="name"
+                                    required />
+                                <label for="name">Enter your name</label>
+                            </div>
+                            <div class="first_form_label">
+                                <input class="form_enters form_required" type="date" placeholder="12.03.2003"
+                                    name="birth" id="birth" required />
+                                <label for="birth">Enter your date of birth</label>
+                            </div>
+                            <label class="first_form_label gender" for="gender">
+                                <select class="form_enters" name="gender" id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <span>Specify your gender</span>
+                            </label>
+                            <div class="first_form_label">
+                                <input class="form_enters form_required" type="password" name="password" id="password"
+                                    placeholder="Enter the password" required />
+                                <label for="password">Enter the password</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contact_details">
+                            <legend>Contact details</legend>
+                            <div class="contact_details_box">
+                                <div class="first_form_label">
+                                    <input class="form_enters" type="email" id="form_email"
+                                        placeholder="bfndjfn@mail.ru" />
+                                    <label for="form_email">Enter your email</label>
+                                </div>
+                                <div class="first_form_label">
+                                    <input class="form_enters form_required" type="tel" placeholder="89999999999"
+                                        name="tel" id="tel" required />
+                                    <label for="tel">Enter your phone number</label>
+                                </div>
+                                <div class="form_radio">
+                                    <label class="first_form_label">Convenient time for communication</label>
+                                    <div>
+                                        <input type="radio" name="time" value="Morning" id="morning" checked />
+                                        <label for="morning" class="form_radio_focus">Morning</label>
+                                        <input type="radio" name="time" value="Afternoon" id="afternoon" />
+                                        <label for="afternoon" class="form_radio_focus">Afternoon</label>
+                                        <input type="radio" name="time" value="Evening" id="evening" />
+                                        <label for="evening" class="form_radio_focus">Evening</label>
+                                        <input type="radio" name="time" value="Night" id="night" />
+                                        <label for="night" class="form_radio_focus">Night</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form_buttons">
+                        <button class="submit" type="submit">Submit</button>
+                        <button class="reset" type="reset" disabled>Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card"></div>
+        <button class="show_error">Show error</button>
+        <span class="error">Error!</span>
+        <script src="../js/lab11.js"></script>
+    </section>
+</body>
+
+</html>

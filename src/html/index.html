@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard main page</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/12lab.css">
+</head>
+
+<body>
+  <header>
+    <nav class="header_navigation">
+      <a href="/"><img class="header_image" src="../img/Richard logotip.svg" alt="Richard Logo" /></a>
+      <ul class="list">
+        <li class="list_item"><a href="demo.html">Demo</a></li>
+        <li class="list_item"><a href="lab11.html">Lab11</a></li>
+        <li class="list_item"><a href="form.html">Form</a></li>
+        <li class="list_item"><a href="#about">About</a></li>
+        <li class="list_item"><a href="#features">Features</a></li>
+        <li class="list_item"><a href="#how to use">How to use</a></li>
+        <li class="list_item"><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+
+    <div class="header_main">
+      <div>
+        <h1 class="main_heading">Momentum</h1>
+        <h2 class="heading">Launch your product — and savor the momentum.</h2>
+        <button class="button_get_the_app">Get the App</button>
+        <button class="button_get_the_app" id="registration">Registration</button>
+      </div>
+      <img class="header_img" src="../img/Purple header phone.png" alt="Purple phone" />
+    </div>
+    <img class="arrow" src="../img/arrow.svg" alt="White arrow" />
+
+
+    <div class="filter" id="filtermodal"></div>
+    <div class="form_wrapper_modal">
+      <span id="send"></span>
+      <form action="//httpbin.org/post" method="post" id="form">
+        <button id="closebutton">Close</button>
+        <div class="first_form">
+          <fieldset class="personal_information">
+            <legend>Personal information</legend>
+            <div class="first_form_label">
+              <input class="form_enters" type="text" placeholder="Alex" name="name" id="name" required />
+              <label class="modal_label" for="name">Enter your name<span class="error">Enter your name!</span></label>
+            </div>
+            <div class="first_form_label">
+              <input class="form_enters" type="email" name="email" id="form_email" placeholder="bfndjfn@mail.ru"
+                required />
+              <label class="modal_label" for="form_email">Enter your email<span class="error">Enter your email!</span></label>
+            </div>
+            <div class="first_form_label">
+              <input class="form_enters form_required" type="password" name="password" id="password"
+                placeholder="Enter the password" minlength="6" required />
+              <label class="modal_label" for="password">Enter the password<span class="error">Enter the password!</span></label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form_buttons">
+          <button class="submit" type="submit">Submit</button>
+          <button class="submit" type="button" id="showpassword">Show password</button>
+        </div>
+      </form>
+    </div>
+
+
+
+  </header>
+  <main>
+    <section class="black" id="about">
+      <div class="black_container">
+        <h2>Aenean Consectetur Porta</h2>
+        <p class="black_heading">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+        <img class="screenshot_black" src="../img/screenshot on the black.png" alt="Screenshot on the black phone" />
+      </div>
+    </section>
+    <section class="food" id="features">
+      <div class="food_cards">
+        <div class="food_card">
+          <div class="food_card_box">
+            <p class="mini_header">Aenean Consectetur</p>
+            <h2 class="food_header">Magna Porta Sit Bibendum</h2>
+            <p class="food_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+              eros elementum tristique.
+            </p>
+          </div>
+          <img src="../img/Pasta.png" alt="Food card with pasta" />
+        </div>
+        <div class="food_card">
+          <img src="../img/Orders with mint.png" alt="Food card with mint" />
+          <div class="food_card_box">
+            <p class="mini_header">ConsectUltricies</p>
+            <h2 class="food_header">Amet Ipsum</h2>
+            <p class="food_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+              eros elementum tristique.
+            </p>
+          </div>
+        </div>
+        <div class="food_card">
+          <div class="food_card_box">
+            <p class="mini_header">Aenean Consectetur Porta</p>
+            <h2 class="food_header">Magna Porta Sit Bibendum</h2>
+            <p class="food_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+              eros elementum tristique.
+            </p>
+          </div>
+          <img src="../img/Pasta.png" alt="Food card with pasta" />
+        </div>
+      </div>
+    </section>
+    <section id="how to use">
+      <ul class="food_posts">
+        <li class="food_posts_element">
+          <img src="../img/logo_mini_burger.svg" alt="Mini_Logo_Burger" />
+          <strong class="food_header_1">Activity Notifications</strong>
+          <p class="food_text_1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+            eros elementum tristique.
+          </p>
+        </li>
+        <li class="food_posts_element">
+          <img src="../img/logo_mini_table.svg" alt="Mini_Logo_Tableware" />
+          <strong class="food_header_1">Custom Timing</strong>
+          <p class="food_text_1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+            eros elementum tristique.
+          </p>
+        </li>
+        <li class="food_posts_element">
+          <img src="../img/chart.svg" alt="Mini_Logo_Chart" />
+          <strong class="food_header_1">Mobile Optimized</strong>
+          <p class="food_text_1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+            eros elementum tristique.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="number_cards">
+        <li class="number_card">
+          <span class="number">+12k</span>
+          <p class="under_number">Nibh Elit Tristique</p>
+        </li>
+        <li class="number_card">
+          <span class="number">84</span>
+          <p class="under_number">Aenean Condimentum</p>
+        </li>
+        <li class="number_card">
+          <span class="number">3,07</span>
+          <p class="under_number">Quam Inceptos</p>
+        </li>
+        <li class="number_card">
+          <span class="number">24h</span>
+          <p class="under_number">Ullamcorper</p>
+        </li>
+      </ul>
+    </section>
+    <section class="food_recipes">
+      <div class="food_recipes_container">
+        <p class="menu_h1">Aenean Consectetur Porta</p>
+        <h2 class="menu_h2">Sem Risus Elit Vestibulum</h2>
+        <p class="menu_h3">
+          Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
+          erat porttitor ligula, eget lacinia odio sem nec elit.
+          <span class="underline"> Cras mattis consectetur</span> purus sit amet fermentum. Donec
+          id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis
+          euismod.
+        </p>
+      </div>
+      <img src="../img/burgers.jpg" alt="Burgers" />
+    </section>
+    <section class="food_recipes">
+      <img src="../img/cheese with chips.jpg" alt="Cheese with chips" />
+      <div class="food_recipes_container">
+        <p class="menu_h1">Aenean Consectetur Porta</p>
+        <h2 class="menu_h2">Parturient Tortor</h2>
+        <p class="menu_h3">
+          Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
+          erat porttitor ligula, eget lacinia odio sem nec elit.
+          <span class="underline"> Cras mattis consectetur </span> purus sit amet fermentum. Donec
+          id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis
+          euismod.
+        </p>
+      </div>
+    </section>
+
+    <div class="loader"></div>
+    <section class="food_recipes food_invisible_card">
+      <div class="food_recipes_container">
+        <p class="menu_h1">Aenean Consectetur Porta</p>
+        <h2 class="menu_h2">Sem Risus Elit Vestibulum</h2>
+        <p class="menu_h3">
+          Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
+          erat porttitor ligula, eget lacinia odio sem nec elit.
+          <span class="underline"> Cras mattis consectetur</span> purus sit amet fermentum. Donec
+          id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis
+          euismod.
+        </p>
+      </div>
+
+      <img src="../img/burgers.jpg" alt="Burgers" />
+    </section>
+    <section class="quote">
+      <img class="quotation_marks" src="../img/“.svg" alt="Quotation marks" />
+      <figure>
+        <blockquote cite="https://www.nytimes.com/">
+          <p class="blockquote">
+            HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
+            nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum.
+            Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna
+            mollis euismod.ing
+          </p>
+          <figcaption class="signature">
+            <span class="blockquote_name">Joshua Home</span>
+            <cite class="blockquote_cite">New York Times</cite>
+          </figcaption>
+        </blockquote>
+      </figure>
+      <div class="quote_controls">
+        <button aria-label="Quotes" class="quote_control quote_control-active"></button>
+        <button aria-label="Quotes" class="quote_control quote_control"></button>
+      </div>
+    </section>
+    <section>
+      <ul class="img_link">
+        <li class="img_link_li"><img src="../img/webflow logo.png" alt="Webflow Logo" /></li>
+        <li class="img_link_li">
+          <img src="../img/Uber eats logo.png" alt="Uber eats Logo" />
+        </li>
+        <li class="img_link_li">
+          <img src="../img/product hunt logo.png" alt="Product Hunt Logo" />
+        </li>
+        <li class="img_link_li"><img src="../img/Microsoft.png" alt="Microsoft Logo" /></li>
+        <li class="img_link_li"><img src="../img/bitcoir logo.png" alt="Bitcoir Logo" /></li>
+      </ul>
+    </section>
+    <section class="phones"></section>
+    <section class="go" id="download">
+      <h2>Ready to get started?</h2>
+      <div class="buttons">
+        <button class="button_download">Download Now</button>
+        <button class="button_get_in_touch">Get in Touch</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2 class="call">Get updates from Richard</h2>
+    <p class="call_explanation">New course alerts, discounts and free lessons</p>
+    <form action="/" class="button_email">
+      <label for="email" class="visuallyhidden">Enter your email</label>
+      <input class="enter_email" id="email" type="email" name="enter_email" placeholder="Enter your email" style="color: #1C1C1C;
+            padding: 20px;" />
+      <label for="subscribe" class="visuallyhidden">Subscribe </label><input class="subscribe" id="subscribe"
+        type="button" name="subscribe_btn" value="Subscribe" />
+    </form>
+    <img class="footer_img" src="../img/footer richard logo.svg" alt="Footer Richard logo" />
+    <ul class="footer_list">
+      <li class="footer_list_link"><a href="#/">Email</a></li>
+      <li class="footer_list_link"><a href="#/">Instagram</a></li>
+      <li class="footer_list_link"><a href="#/">Facebook</a></li>
+      <li class="footer_list_link"><a href="#/">Twitter</a></li>
+      <li class="footer_list_link"><a href="#/">Image License Info</a></li>
+      <li class="footer_list_link"><a href="#/">Powered by Webflow</a></li>
+    </ul>
+  </footer>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

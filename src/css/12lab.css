@@ -1,0 +1,82 @@
+.form_wrapper_modal {
+  width: max-content;
+  height: max-content;
+  font-size: 0.2rem;
+  display: none;
+  margin: auto;
+  color: white;
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: none;
+}
+
+button {
+  background-color: #fc0a7e;
+  color: #1b1b1b;
+  min-width: 156px;
+  padding: 20px;
+  border: none;
+}
+
+.bag {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+#button_bag {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  z-index: 5;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+}
+
+#closebutton {
+  min-width: 100px;
+  padding: 5px;
+  background-color: #fc0a7e;
+  color: white;
+  position: relative;
+  left: 352px;
+}
+
+#closebutton:hover {
+  opacity: 70%;
+}
+
+span {
+  font-size: 50px;
+  color: white;
+  margin: 0 auto;
+  max-width: 600px;
+  display: block;
+}
+
+.modal_label{
+  position: relative;
+}
+
+.error {
+  font-size: 20px;
+  background-color: red;
+  position: absolute;
+ display: none;
+  top: 63px;
+}
